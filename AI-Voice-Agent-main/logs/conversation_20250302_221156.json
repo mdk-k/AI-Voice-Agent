@@ -1,0 +1,20 @@
+{
+    "metadata": {
+        "call_sid": "CAa9436a411c3e31d41127885c75a67599",
+        "caller_number": "+919284091637",
+        "called_number": "+18778490738",
+        "start_time": "2025-03-02T22:11:45.069035"
+    },
+    "conversation": [
+        {
+            "speaker": "customer",
+            "text": "I want to know about your company.",
+            "timestamp": "2025-03-02T22:11:54.792991"
+        },
+        {
+            "speaker": "agent",
+            "text": "I'm sorry, I only provide information about Jivus AI.",
+            "timestamp": "2025-03-02T22:11:55.720486"
+        }
+    ]
+}

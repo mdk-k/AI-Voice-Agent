@@ -1,0 +1,40 @@
+{
+    "metadata": {
+        "call_sid": "CA4754a286104f31eab588e75f3271b743",
+        "caller_number": "+919284091637",
+        "called_number": "+18778490738",
+        "start_time": "2025-03-02T22:12:15.166772"
+    },
+    "conversation": [
+        {
+            "speaker": "customer",
+            "text": "I want to know about your services.",
+            "timestamp": "2025-03-02T22:12:24.826835"
+        },
+        {
+            "speaker": "agent",
+            "text": "Jivus AI offers AI-powered search and conversational systems that enhance business workflows. Our tools help automate customer interactions and provide intelligent search solutions.",
+            "timestamp": "2025-03-02T22:12:25.880030"
+        },
+        {
+            "speaker": "customer",
+            "text": "Can you tell me any product?",
+            "timestamp": "2025-03-02T22:12:46.516610"
+        },
+        {
+            "speaker": "agent",
+            "text": "We have Jivus Search, an AI-driven search engine that understands queries contextually, and Jivus Chat, an interactive chatbot that provides conversational assistance.",
+            "timestamp": "2025-03-02T22:12:47.549506"
+        },
+        {
+            "speaker": "customer",
+            "text": "Can you give me price details?",
+            "timestamp": "2025-03-02T22:13:08.109428"
+        },
+        {
+            "speaker": "agent",
+            "text": "Our pricing varies based on usage. We offer flexible plans starting at $300 per month for basic access, with enterprise solutions customized to meet high-volume requirements.",
+            "timestamp": "2025-03-02T22:13:09.168798"
+        }
+    ]
+}
