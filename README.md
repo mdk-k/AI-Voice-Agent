@@ -21,57 +21,56 @@ Features
 
 
 ### Features
-Call Handling:
-Receive and process incoming calls via Twilio.
+**Call Handling**:
+  Receive and process incoming calls via Twilio.
 
-.Speech-to-Text:
+.**Speech-to-Text**:
   Transcribe customer speech using Deepgram with minimal latency.
 
-.Conversational AI:
+.**Conversational AI**:
   Generate sales-oriented, context-aware responses using a fine-tuned GPT-4o Mini model deployed on Azure OpenAI.
 
-.Text-to-Speech:
+.**Text-to-Speech**:
   Convert AI-generated responses to natural-sounding audio using ElevenLabs TTS.
 
-.Conversation Logging:
+.**Conversation Logging**:
   Log conversation details (customer input, AI responses, timestamps, call metadata) in a structured format (JSON).
 
-.Live Monitoring Dashboard:
+.**Live Monitoring Dashboard**:
   A simple Streamlit dashboard to view live conversation logs.
 
-.Real-time Engagement Optimization:
+.**Real-time Engagement Optimization**:
   Techniques such as asynchronous processing, caching, and efficient context management ensure fast responses.
 
 #### Architecture
-Call Handling (Twilio):
-
-1. Incoming calls are received by Twilio.
-   A webhook endpoint (implemented in Flask) processes the call.
-   The <Gather> verb is used to capture customer speech.
-   Speech-to-Text (Deepgram):
-
-2. Customer speech is transcribed into text using Deepgram's API.
-   Conversational AI (Azure OpenAI GPT-4o Mini):
-
-3. Transcribed text and conversation history are passed to the fine-tuned GPT-4o Mini model for generating responses.
-   The model is fine-tuned on sales data to focus solely on AI–related queries.
-   Text-to-Speech (ElevenLabs):
-
-4. The AI response is converted to audio using ElevenLabs TTS and saved as an MP3 file accessible via a public URL.
-   Conversation Logging:
-
-5. Conversation details (including timestamps and call metadata) are logged to JSON files.
-   Dashboard (Streamlit):
-
-A simple web UI displays live conversation logs for monitoring.
+   1. **Call Handling (Twilio)**:
+       Incoming calls are received by Twilio.
+       A webhook endpoint (implemented in Flask) processes the call.
+       The <Gather> verb is used to capture customer speech.
+      
+   2.  **Speech-to-Text (Deepgram)**:
+       Customer speech is transcribed into text using Deepgram's API.
+       
+   3. **Conversational AI (Azure OpenAI GPT-4o Mini)**:
+       Transcribed text and conversation history are passed to the fine-tuned GPT-4o Mini model for generating responses.
+       The model is fine-tuned on sales data to focus solely on AI–related queries.
+      
+   4. **Text-to-Speech (ElevenLabs)**:
+        The AI response is converted to audio using ElevenLabs TTS and saved as an MP3 file accessible via a public URL.
+      
+   5.   **Conversation Logging**:
+        Conversation details (including timestamps and call metadata) are logged to JSON files.
+        
+   6.  **Dashboard (Streamlit)**:
+        A simple web UI displays live conversation logs for monitoring.
 
 ##### Prerequisites
-.Python 3.8+
-.Twilio Account with a purchased phone number
-.Deepgram API Key
-.ElevenLabs API Key and TTS Endpoint
-.Azure OpenAI Resource (with fine-tuning access for GPT-4o Mini)
-.Required Python Libraries:
+.**Python 3.8+**
+.**Twilio Account** with a purchased phone number
+.**Deepgram API Key**
+.**ElevenLabs API Key and TTS Endpoint**
+.**Azure OpenAI Resource** (with fine-tuning access for GPT-4o Mini)
+.**Required Python Libraries**:
    Flask
    OpenAI
    Requests
@@ -80,15 +79,15 @@ A simple web UI displays live conversation logs for monitoring.
    streamlit-autorefresh (optional)
 
   ###### Setup & Installation
-1. Clone the Repository:
+1. **Clone the Repository**:
 
     git clone https://github.com/yourusername/ ai-voice-agent.git
     cd ai-voice-agent
-2. Create and Activate a Virtual Environment:
+2. **Create and Activate a Virtual Environment**:
 
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
-3. Install Dependencies:
+3. **Install Dependencies**:
 
     pip install -r requirements.txt
     Sample requirements.txt:
@@ -122,7 +121,7 @@ ELEVENLABS_TTS_URL=https://api.elevenlabs.io/v1/text-to-speech/21m00Tcm4TlvDq8ik
 ELEVENLABS_VOICE=default_voice
 Important: Do not expose your API keys publicly.
 
-Running the Project
+**Running the Project**
 1. Running the Flask Application (Twilio Webhooks & AI Processing)
 Run the Flask server:
 
@@ -139,7 +138,7 @@ To monitor live conversation logs:
 streamlit run streamlit_dashboard.py
 This dashboard displays logs from the logs/ folder and auto-refreshes to show the latest conversation data.
 
-##Using Ngrok for Public Exposure
+**Using Ngrok for Public Exposure**
 When developing locally, you can use ngrok to expose your Flask server to the public internet. This is essential for testing Twilio webhooks.
 
 Install ngrok:
